@@ -1,0 +1,44 @@
+.content-container {
+  display: flex;
+  flex-wrap: wrap;            /* wrap on small screens */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 1800px;
+}
+
+.content-box {
+  flex: 1 1 650px;            /* grow/shrink, base width ~650px */
+  max-width: 700px;
+  padding: 40px;
+  border: 2px solid rgb(0, 0, 0);
+  background: #fff;
+  line-height: 1.6;
+  font-family: Chalkduster, fantasy;
+
+  /* override any accidental multi-column rules */
+  column-count: 1;
+  column-width: auto;
+  column-gap: normal;
+}
+
+/* optional: remove body default margin so layout aligns nicely */
+html, body { margin: 0; }
+
+/* image centered */
+figure {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+}
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* responsive: stack on narrow viewports */
+@media (max-width: 1200px) {
+  .content-box { flex: 1 1 100%; max-width: 900px; }
+}
