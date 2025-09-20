@@ -1,32 +1,45 @@
+/* Layout wrapper: two columns side-by-side */
 .content-container {
   display: flex;
-  flex-wrap: wrap;            /* wrap on small screens */
-  justify-content: center;
-  align-items: flex-start;
+  flex-wrap: wrap;           /* wrap to next line on small screens */
+  justify-content: center;   /* center the pair in the page */
+  align-items: stretch;      /* <-- equal height per row */
   gap: 40px;
   margin: 40px auto;
   max-width: 1800px;
+  box-sizing: border-box;
 }
 
+/* Each article box */
 .content-box {
-  flex: 1 1 650px;            /* grow/shrink, base width ~650px */
+  flex: 1 1 650px;           /* equal width columns, base ~650px */
   max-width: 700px;
   padding: 40px;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid #000;
   background: #fff;
   line-height: 1.6;
-  font-family: Chalkduster, fantasy;
+  font-family: "Chalkduster", fantasy;
 
-  /* override any accidental multi-column rules */
+  /* Make the box itself a flex column so it can stretch cleanly */
+  display: flex;
+  flex-direction: column;
+
+  /* Ensure no accidental multi-column layout leaks in */
   column-count: 1;
   column-width: auto;
   column-gap: normal;
+
+  /* Keep padding/border from changing measured width */
+  box-sizing: border-box;
 }
 
-/* optional: remove body default margin so layout aligns nicely */
+/* Trim trailing space from the last paragraph so bottoms align tighter */
+.content-box > :last-child { margin-bottom: 0; }
+
+/* Remove default body margin for tidy alignment */
 html, body { margin: 0; }
 
-/* image centered */
+/* Center the image above */
 figure {
   display: flex;
   justify-content: center;
@@ -38,7 +51,10 @@ figure img {
   display: block;
 }
 
-/* responsive: stack on narrow viewports */
+/* Responsive: stack on narrower screens */
 @media (max-width: 1200px) {
-  .content-box { flex: 1 1 100%; max-width: 900px; }
+  .content-box {
+    flex: 1 1 100%;
+    max-width: 900px;
+  }
 }
