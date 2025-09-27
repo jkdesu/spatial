@@ -1,27 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INDEX .</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ji-in Kang's digital garden - Explore Programming as a Creative Practice">
+  <title>SmallWeb · Digital Garden</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>INDEX .</h1>
-    <p>is a blog web that offers insights into emerging hype goods and culture selected by the editor, Ji-in Kang.</p>  
-    <p><em>Index .</em> tries to provide the best community for people who are interested in these hype cultures & values.</p>
-    <p>Not that <em>Index .</em> only provides the best insight, it aims to create a lifestyle community.</p>
-    <p>Selected collection for each category will be updated every 2 months. (At least I will aim to...)</p>
+  <!-- Header Navigation -->
+  <header class="topbar" role="banner">
+    <div class="logo-container">
+      <a href="#" class="logo-link" aria-label="Return to home">
+        <img src="logo.png" alt="SmallWeb Logo" class="logo">
+      </a>
+    </div>
+    <a class="brand" href="/" aria-label="Home">jiinkang20@gmail.com</a>
+    <nav class="topnav" aria-label="Primary navigation">
+      <a href="about/" id="about-link" aria-label="About page">About</a>
+      <a href="#" id="projects-link" aria-label="Projects page">Projects</a>
+      <a href="#" aria-label="Info page">Info</a>
+    </nav>
+  </header>
 
-    <h2>Categories</h2>
-    <ul>
-        <li>Artists</li>
-        <li>Digital Art</li>
-        <li>Brands</li>
-        <li>Health & Fitness</li>
-        <li>Memes</li>
-        <li>Food</li>
-        <li>Travel</li>
-    </ul>
+  <!-- Hero Landing Section -->
+  <section class="hero" aria-label="Welcome to the digital garden">
+    <div class="hero-inner">
+      <h1 class="hero-title">Ji-in Kang's digital world</h1>
+      <p class="hero-sub">Explore Programming as a Creative Practice</p>
+      <div class="hero-actions" role="group" aria-label="Main actions">
+        <button type="button" class="pill" id="about-btn" aria-label="Learn more about me">About</button>
+        <button type="button" class="pill" id="explore-btn" aria-label="Explore the garden">Explore</button>
+      </div>
+    </div>
+    <button type="button" class="hero-arrow" id="hero-arrow" aria-label="Enter the garden">↓</button>
+  </section>
+
+  <!-- Spacer for hero transition -->
+  <div class="hero-spacer" aria-hidden="true"></div>
+
+  <!-- Main Content -->
+  <main class="main-content" id="main-content">
+    <!-- Quick Navigation Flow -->
+    <section class="flow" aria-label="Quick collection navigation">
+      <button type="button" class="pill flow-pill" data-collection="interests" aria-label="View interests collection">Interests</button>
+      <span class="arrow" aria-hidden="true">→</span>
+      <button type="button" class="pill flow-pill" data-collection="ideas" aria-label="View ideas collection">Ideas</button>
+      <span class="arrow" aria-hidden="true">→</span>
+      <button type="button" class="pill flow-pill" data-collection="prototype" aria-label="View prototype collection">Prototype</button>
+    </section>
+
+    <!-- Projects Overview -->
+    <section class="projects" aria-label="All projects">
+      <div class="projects-grid" id="projects-grid" aria-label="Project gallery">
+        <article class="project-card" data-collection="interests" tabindex="0">
+          <img src="projects/cover/001.png" alt="Project coming soon">
+          <div class="project-content">
+            <h3>Generative Design</h3>
+            <p>Using python to create Artworks</p>
+            <span class="project-date">2025</span>
+          </div>
+        </article>
+        
+        <article class="project-card" data-collection="ideas" tabindex="0">
+          <img src="projects/cover/002.png" alt="Project coming soon">
+          <div class="project-content">
+            <h3>Running</h3>
+            <p>New hobby</p>
+            <span class="project-date">2025</span>
+          </div>
+        </article>
+        
+        <article class="project-card" data-collection="ideas" tabindex="0">
+          <img src="projects/cover/random.png" alt="Project coming soon">
+          <div class="project-content">
+            <h3>Web3 in 2025</h3>
+            <p>Blockchain technology and NFTs</p>
+            <span class="project-date">2025</span>
+          </div>
+        </article>
+        
+        <article class="project-card" data-collection="prototype" tabindex="0">
+          <img src="projects/cover/cooming.png" alt="Project coming soon">
+          <div class="project-content">
+            <h3>Coming Soon...</h3>
+            <p>New project in development</p>
+            <span class="project-date">2025</span>
+          </div>
+        </article>
+        
+        <article class="project-card" data-collection="interests" tabindex="0">
+          <img src="projects/cover/cooming.png" alt="Project coming soon">
+          <div class="project-content">
+            <h3>Coming Soon...</h3>
+            <p>New project in development</p>
+            <span class="project-date">2025</span>
+          </div>
+        </article>
+        
+        <article class="project-card" data-collection="ideas" tabindex="0">
+          <img src="projects/cover/cooming.png" alt="Project coming soon">
+          <div class="project-content">
+            <h3>Coming Soon...</h3>
+            <p>New project in development</p>
+            <span class="project-date">2025</span>
+          </div>
+        </article>
+        
+        <article class="project-card" data-collection="prototype" tabindex="0">
+          <img src="projects/cover/cooming.png" alt="Project coming soon">
+          <div class="project-content">
+            <h3>Coming Soon...</h3>
+            <p>New project in development</p>
+            <span class="project-date">2025</span>
+          </div>
+        </article>
+        
+        <article class="project-card" data-collection="prototype" tabindex="0">
+          <img src="projects/cover/cooming.png" alt="Project coming soon">
+          <div class="project-content">
+            <h3>Coming Soon...</h3>
+            <p>New project in development</p>
+            <span class="project-date">2025</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Book-style About Popup -->
+  <div class="book-overlay" id="about-book" role="dialog" aria-labelledby="book-title" aria-hidden="true">
+    <!-- Newspaper-style Collage Background -->
+    <div class="collage-background">
+      <div class="collage-grid">
+        <div class="collage-item collage-large">
+          <div class="image-placeholder">
+            <img src="about/collages/1.jpeg" alt="Collage image 1" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-medium">
+          <div class="image-placeholder">
+            <img src="about/collages/2.jpeg" alt="Collage image 2" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/3.jpeg" alt="Collage image 3" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/4.jpeg" alt="Collage image 4" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-medium">
+          <div class="image-placeholder">
+            <img src="about/collages/5.jpeg" alt="Collage image 5" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/6.jpeg" alt="Collage image 6" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/7.jpeg" alt="Collage image 7" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-medium">
+          <div class="image-placeholder">
+            <img src="about/collages/8.jpeg" alt="Collage image 8" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/9.jpeg" alt="Collage image 9" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/10.jpeg" alt="Collage image 10" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-large">
+          <div class="image-placeholder">
+            <img src="about/collages/11.jpeg" alt="Collage image 11" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/12.jpeg" alt="Collage image 12" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-medium">
+          <div class="image-placeholder">
+            <img src="about/collages/13.jpeg" alt="Collage image 13" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/14.jpeg" alt="Collage image 14" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <!-- Bottom row of pictures: 2 rows, 5 pictures per row -->
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/15.jpeg" alt="Collage image 15" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/16.jpeg" alt="Collage image 16" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/17.jpeg" alt="Collage image 17" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/18.jpeg" alt="Collage image 18" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/19.jpeg" alt="Collage image 19" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/20.jpeg" alt="Collage image 20" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/21.jpeg" alt="Collage image 21" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/22.jpeg" alt="Collage image 22" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/23.jpeg" alt="Collage image 23" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+        <div class="collage-item collage-small">
+          <div class="image-placeholder">
+            <img src="about/collages/24.jpeg" alt="Collage image 24" class="collage-img">
+          </div>
+          <div class="pin pin-top-left"></div>
+          <div class="pin pin-top-right"></div>
+          <div class="pin pin-bottom-left"></div>
+          <div class="pin pin-bottom-right"></div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Biography section at bottom of page -->
+    <div class="biography-section">
+      <div class="biography-content">
+        <div class="biography-layout">
+          <div class="biography-image">
+            <img src="about/about.png" alt="Ji-in Kang profile" class="large-profile-img">
+          </div>
+          <div class="biography-text">
+            <p>I am an aspiring brand designer with a background in Economics from Waseda University, Tokyo. I am currently pursuing a Master's degree in Computational Design at Columbia University's GSAPP, where I explore the intersection of culture, value, and emotion through visual identity and data visualization.</p>
+            
+            <p>While living in Tokyo, I was drawn to the cultural scene through my passion for collecting designer figures and hypewear, which inspired me to shift away from a traditional path in finance—despite having held multiple finance internships—and pursue a creative career.</p>
+            
+            <p>My current interests lie in the application of NFTs, the allocation of digital assets across blockchain ecosystems, and the use of computational methods and algorithms to create digital art. With roots in painting and Adobe Creative Suite, I now blend traditional and digital practices to explore new forms of expression.</p>
+            
+            <p>Beyond design and research, I am passionate about fitness and outdoor activities, including surfing, running, tennis, and working out, as well as continuing to explore emerging digital assets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Close button at top of page -->
+    <button class="page-close" id="page-close" aria-label="Close page">&times;</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
