@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Generative Design - Ji-in Kang's Project">
+  <title>Generative Design · Ji-in Kang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    .project-page {
+      min-height: 100vh;
+      background: var(--bg);
+      padding: 2rem;
+    }
+    
+    .project-header {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .project-title {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 1rem;
+    }
+    
+    .project-subtitle {
+      font-size: 1.2rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+    
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      transition: color 0.2s ease;
+    }
+    
+    .back-link:hover {
+      color: var(--fg);
+    }
+    
+    .project-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .project-image {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: var(--radius-card);
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    
+    .project-description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: var(--fg);
+      margin-bottom: 2rem;
+    }
+    
+    .project-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .detail-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 1.5rem;
+    }
+    
+    .detail-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--fg);
+      margin-bottom: 0.5rem;
+    }
+    
+    .detail-content {
+      color: var(--muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="project-page">
+    <div class="project-header">
+      <a href="../../index.html" class="back-link">
+        ← Back to Projects
+      </a>
+      <h1 class="project-title">Generative Design</h1>
+      <p class="project-subtitle">Exploring algorithmic creativity and computational aesthetics</p>
+    </div>
+    
+    <div class="project-content">
+      <img src="../../projects/cover/001.png" alt="Generative Design Project" class="project-image">
+      
+      <div class="project-description">
+        <p>This project explores the intersection of code and creativity, using computational methods to generate unique visual patterns and forms. Through algorithmic design, we investigate how code can become a medium for artistic expression and creative exploration.</p>
+        
+        <p>The work combines traditional design principles with modern programming techniques, creating a bridge between human intuition and machine precision. Each generated piece is unique, yet follows underlying mathematical principles that create visual harmony and aesthetic appeal.</p>
+      </div>
+      
+      <div class="project-details">
+        <div class="detail-card">
+          <h3 class="detail-title">Technologies</h3>
+          <p class="detail-content">Processing, p5.js, JavaScript, Creative Coding</p>
+        </div>
+        
+        <div class="detail-card">
+          <h3 class="detail-title">Year</h3>
+          <p class="detail-content">2025</p>
+        </div>
+        
+        <div class="detail-card">
+          <h3 class="detail-title">Category</h3>
+          <p class="detail-content">Computational Design</p>
+        </div>
+        
+        <div class="detail-card">
+          <h3 class="detail-title">Status</h3>
+          <p class="detail-content">In Development</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
